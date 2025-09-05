@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MyPortifolioWeb
 
-## Getting Started
+Portfólio pessoal desenvolvido com [Next.js](https://nextjs.org/) e React, apresentando projetos, tecnologias dominadas e formas de contato. O design é moderno, responsivo e inclui animações para uma experiência visual diferenciada.
 
-First, run the development server:
+## Demonstração
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Screenshot do Portfólio](public/bg-header.png)
+
+## Funcionalidades
+
+- **Página Inicial:** Apresentação do desenvolvedor com animação de estrelas.
+- **Sobre:** Breve descrição da trajetória, habilidades e experiência.
+- **Projetos:** Cards com detalhes dos principais projetos, links para repositórios e demonstrações.
+- **Stack:** Tecnologias utilizadas, exibidas com ícones animados.
+- **Contato:** Botões para WhatsApp, GitHub e E-mail.
+- **Responsividade:** Layout adaptado para desktop, tablet e mobile.
+- **Animações:** Efeitos de fade e movimento ao rolar a página.
+
+## Estrutura de Pastas
+
+```
+src/
+  app/
+    pages/
+      home/
+        page.jsx
+        styles.css
+    layout.js
+    globals.css
+    page.js
+public/
+  bg-header.png
+  bg-footer.png
+  bg-stack.png
+  stack.png
+  git.png
+  github.png
+  js.png
+  native.png
+  node.png
+  react.png
+  wpp.png
+  email.png
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Principais Tecnologias
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) (configurado em [`postcss.config.mjs`](postcss.config.mjs))
+- CSS customizado ([`src/app/pages/home/styles.css`](src/app/pages/home/styles.css))
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como executar
 
-## Learn More
+Clone o repositório:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+git clone https://github.com/GCode-S/MyPortifolioWeb.git
+cd MyPortifolioWeb
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Instale as dependências:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm install
+```
 
-## Deploy on Vercel
+Inicie o servidor de desenvolvimento:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
+
+## Principais arquivos
+
+- [`src/app/pages/home/page.jsx`](src/app/pages/home/page.jsx): Página principal do portfólio.
+- [`src/app/pages/home/styles.css`](src/app/pages/home/styles.css): Estilos customizados e animações.
+- [`src/app/layout.js`](src/app/layout.js): Layout global e fontes.
+- [`src/app/globals.css`](src/app/globals.css): Estilos globais e configuração de Tailwind.
+- [`package.json`](package.json): Dependências e scripts.
+
+## Projetos em destaque
+
+- **Controll-Fornecedor:** Sistema para cadastro e gerenciamento de fornecedores e produtos.
+  - [Repositório](https://github.com/GCode-S/Controll-Fornecedor)
+  - [Demo](https://inquisitive-croquembouche-d8a8e4.netlify.app/html/home/home.html)
+
+- **Landing Page Catálogo Lash Designer:** Página moderna e responsiva para apresentação de catálogo.
+  - [Repositório](https://github.com/GCode-S/LandingPage-Catalago-StefaniLash)
+  - [Demo](https://gcode-s.github.io/LandingPage-Catalago-StefaniLash/)
+
+## Contato
+
+- [WhatsApp](https://wa.me/5534988611665)
+- [GitHub](https://github.com/GCode-S)
+- [E-mail](mailto:gabriel.c.souza001@gmail.com)
+
+---
+
+&copy; GCode-S
