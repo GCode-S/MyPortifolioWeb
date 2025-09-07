@@ -1,7 +1,16 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import "./styles.css";
+import Lottie from "react-lottie-player";
+import bgJson from "../../../../public/Hologram.json";
+import bgWebJson from "../../../../public/flexibilility.json";
+
+import js from "../../../../public/js.png";
+import react from "../../../../public/react.png";
+import reactnative from "../../../../public/native.png";
+import node from "../../../../public/node.png";
 
 function useAnimateOnScroll(className = "animate-in-up") {
   const ref = useRef(null);
@@ -73,6 +82,7 @@ export default function Home() {
       {stars}
       <header className="animate-in-right animate-delay-1">
         <h1 id="inicio">
+
           Gabriel <span>S.</span>
         </h1>
         <nav>
@@ -85,14 +95,23 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="title animate-in-right animate-delay-4">
+        <div className="title animate-in-right animate-delay-3">
+         
+          
           <h1>GCode-S</h1>
           <h1>No Universo Dev</h1>
           <h3>transformando ideias em experiências digitais únicas </h3>
+         
+           <Lottie
+            loop
+            animationData={bgJson}
+            play
+            className="lottie animate-in-left animate-delay-4"
+          />
         </div>
-
+        <h2 className="content animate-in-left animate-delay-4" >Sobre</h2>
         <div className="content invisible-on-scroll" ref={cardRef2} id="sobre"  >
-          <h2 >Sobre</h2>
+          
           <p >
             Sou natural de Minas Gerais e, desde os 15 anos, me dedico de forma
             autodidata ao aprendizado em programação, sempre em busca de evoluir
@@ -143,14 +162,22 @@ export default function Home() {
                 <a href="https://gcode-s.github.io/LandingPage-Catalago-StefaniLash/" className="see-more">Ver Mais</a>
               </div>
             </div>
+
+           
+              <Lottie
+            loop
+            animationData={bgWebJson}
+            play
+            className="bgWebJson animate-in-left animate-delay-4"
+          />
           </div>
 
           <h2 id="stack">Stack</h2>
           <div className="stack invisible-on-scroll" ref={cardRef3}>
-            <div className="icons stack-js"></div>
-            <div className="icons stack-react"></div>
-            <div className="icons stack-react-native"></div>
-            <div className="icons stack-node"></div>
+            <Image src={js} className="icons stack-js"/>
+            <Image src={react} className="icons stack-react"/>
+            <Image src={reactnative} className="icons stack-react-native"/>
+            <Image src={node} className="icons stack-node"/>
           </div>
           <h2 id="contato">Contato</h2>
           <div className="contact">
